@@ -4,6 +4,9 @@
     <band height="20">
       <staticText>
         <reportElement x="220" y="0" width="200" height="20" />
+        <textElement>
+          <font fontName="ipagp" />
+        </textElement>
         <text><![CDATA[Hello, world.]]></text>
       </staticText>
     </band>
