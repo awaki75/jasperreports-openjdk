@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    image: maven:3.6.0-jdk-8-alpine
+    volumes:
+      - .:/app
+      - maven-repo:/root/.m2
+    working_dir: /app
+    command: mvn exec:java
+volumes:
+  maven-repo:
